@@ -1,0 +1,695 @@
+import { Component } from 'react'
+
+
+class FirstSec extends Component{
+render(){
+return(
+<div className="hero-wrap js-fullheight">
+    <div className="overlay"></div>
+    <div className="container">
+        <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+            data-scrollax-parent="true">
+            <div className="col-md-11 ftco-animate text-center">
+                <h1 className="mb-4">Highest Quality Care For Pets You'll Love </h1>
+                <p><a href="#" className="btn btn-primary mr-md-4 py-3 px-4">Learn more <span
+                            className="ion-ios-arrow-forward"></span></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+)
+}
+}
+
+class SecondSec extends Component{
+// constructor(){
+//     super()
+//     this.state = {
+//         offset:0
+//     }
+// }
+
+// OffTop=(event)=>{
+//     this.setState({
+//         offset: console.log(event.offsetTop)
+//     })
+// }
+
+
+
+render(){
+return(
+<section className="ftco-section bg-light ftco-no-pt ftco-intro" id='threeBox'>
+    <div className="container">
+        <div className="row">
+            <div className="col-md-4 d-flex align-self-stretch px-4 littleTopAnime">
+                <div className="d-block services active text-center">
+                    <div className="icon d-flex align-items-center justify-content-center">
+                        <span className="flaticon-blind"></span>
+                    </div>
+                    <div className="media-body">
+                        <h3 className="heading">Dog Walking</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right.</p>
+                        <a href="#" className="btn-custom d-flex align-items-center justify-content-center"><span
+                                className="fa fa-chevron-right"></span><i className="sr-only">Read more</i></a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-4 d-flex align-self-stretch px-4 littleTopAnime">
+                <div className="d-block services text-center">
+                    <div className="icon d-flex align-items-center justify-content-center">
+                        <span className="flaticon-dog-eating"></span>
+                    </div>
+                    <div className="media-body">
+                        <h3 className="heading">Pet Daycare</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right.</p>
+                        <a href="#" className="btn-custom d-flex align-items-center justify-content-center"><span
+                                className="fa fa-chevron-right"></span><i className="sr-only">Read more</i></a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-4 d-flex align-self-stretch px-4 littleTopAnime">
+                <div className="d-block services text-center">
+                    <div className="icon d-flex align-items-center justify-content-center">
+                        <span className="flaticon-grooming"></span>
+                    </div>
+                    <div className="media-body">
+                        <h3 className="heading">Pet Grooming</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right.</p>
+                        <a href="#" className="btn-custom d-flex align-items-center justify-content-center"><span
+                                className="fa fa-chevron-right"></span><i className="sr-only">Read more</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+)
+}
+}
+
+
+class ThirdSec extends Component{
+render(){
+return(
+<section className="ftco-section ftco-no-pt ftco-no-pb">
+    <div className="container">
+        <div className="row d-flex no-gutters">
+            <div className="col-md-5 d-flex">
+                <div
+                    className="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0">
+                </div>
+            </div>
+            <div className="col-md-7 pl-md-5 py-md-5">
+                <div className="heading-section pt-md-5">
+                    <h2 className="mb-4">Why Choose Us?</h2>
+                </div>
+                <div className="row">
+                    <div className="col-md-6 services-2 w-100 d-flex">
+                        <div className="icon d-flex align-items-center justify-content-center"><span
+                                className="flaticon-stethoscope"></span></div>
+                        <div className="text pl-3">
+                            <h4>Care Advices</h4>
+                            <p>Far far away, behind the word mountains, far from the countries.</p>
+                        </div>
+                    </div>
+                    <div className="col-md-6 services-2 w-100 d-flex">
+                        <div className="icon d-flex align-items-center justify-content-center"><span
+                                className="flaticon-customer-service"></span></div>
+                        <div className="text pl-3">
+                            <h4>Customer Supports</h4>
+                            <p>Far far away, behind the word mountains, far from the countries.</p>
+                        </div>
+                    </div>
+                    <div className="col-md-6 services-2 w-100 d-flex">
+                        <div className="icon d-flex align-items-center justify-content-center"><span
+                                className="flaticon-emergency-call"></span></div>
+                        <div className="text pl-3">
+                            <h4>Emergency Services</h4>
+                            <p>Far far away, behind the word mountains, far from the countries.</p>
+                        </div>
+                    </div>
+                    <div className="col-md-6 services-2 w-100 d-flex">
+                        <div className="icon d-flex align-items-center justify-content-center"><span
+                                className="flaticon-veterinarian"></span></div>
+                        <div className="text pl-3">
+                            <h4>Veterinary Help</h4>
+                            <p>Far far away, behind the word mountains, far from the countries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+)
+}
+}
+
+class Faq extends Component{
+
+
+    Dropdown = (event)=>{
+         if(event.target.getAttribute('data-option') == 'close'){
+            event.target.childNodes[0].childNodes[0].style.cssText='background:#00bd56;color:white'
+            event.target.nextElementSibling.style.cssText='max-height:'+event.target.nextElementSibling.scrollHeight+'px'
+            event.target.setAttribute('data-option','open')
+        }else{
+            event.target.nextElementSibling.style.cssText='max-height:0'
+            event.target.setAttribute('data-option','close')
+            event.target.childNodes[0].childNodes[0].style.cssText='background:white;color:black'
+        }
+
+    }
+
+
+render(){
+return(
+<section className="ftco-section bg-light ftco-faqs">
+    <div className="container">
+        <div className="row">
+            <div className="col-lg-6 order-md-last">
+                <div
+                    className="img img-video img-video-faq d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0">
+                    <a href="https://vimeo.com/45830194"
+                        className="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                        <span className="fa fa-play"></span>
+                    </a>
+                </div>
+                <div className="d-flex mt-3">
+                    <div className="img img-2 img-l mr-md-2"></div>
+                    <div className="img img-2 img-r ml-md-2"></div>
+                </div>
+            </div>
+
+            <div className="col-lg-6">
+                <div className="heading-section mb-5 mt-5 mt-lg-0">
+                    <h2 className="mb-3">Frequently Asks Questions</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                        there live the blind texts.</p>
+                </div>
+                <div id="accordion" className="myaccordion w-100" aria-multiselectable="true">
+                    <div className="card">
+                        <div className="card-header p-0" data-option='open' onClick={this.Dropdown}>
+                            <h2 className="mb-0">
+                                <button className="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link">
+                                    <p className="mb-0">How to train your pet dog?</p>
+                                    <i className="fa" aria-hidden="true"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div className="collapse">
+                            <div className="card-body py-3 px-0">
+                                <ol>
+                                    <li>Far far away, behind the word mountains</li>
+                                    <li>Consonantia, there live the blind texts</li>
+                                    <li>When she reached the first hills of the Italic Mountains</li>
+                                    <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                    <li>Separated they live in Bookmarksgrove right</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <div className="card-header p-0" data-option='close' onClick={this.Dropdown}>
+                            <h2 className="mb-0">
+                                <button href="#collapseTwo"
+                                    className="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link">
+                                    <p className="mb-0">How to manage your pets?</p>
+                                    <i className="fa" aria-hidden="true"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div className="collapse" data-status='hidden' id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+                            <div className="card-body py-3 px-0">
+                                <ol>
+                                    <li>Far far away, behind the word mountains</li>
+                                    <li>Consonantia, there live the blind texts</li>
+                                    <li>When she reached the first hills of the Italic Mountains</li>
+                                    <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                    <li>Separated they live in Bookmarksgrove right</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <div className="card-header p-0" data-option='close' onClick={this.Dropdown}>
+                            <h2 className="mb-0">
+                                <button href="#collapseThree" className="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link">
+                                    <p className="mb-0">What is the best grooming for your pets?</p>
+                                    <i className="fa" aria-hidden="true"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div className="collapse"  id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
+                            <div className="card-body py-3 px-0">
+                                <ol>
+                                    <li>Far far away, behind the word mountains</li>
+                                    <li>Consonantia, there live the blind texts</li>
+                                    <li>When she reached the first hills of the Italic Mountains</li>
+                                    <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                    <li>Separated they live in Bookmarksgrove right</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <div className="card-header p-0" data-option='close' onClick={this.Dropdown}>
+                            <h2 className="mb-0">
+                                <button className="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link">
+                                    <p className="mb-0">What are those requirements for sitting pets?</p>
+                                    <i className="fa" aria-hidden="true"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div className="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
+                            <div className="card-body py-3 px-0">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                                    right at the coast of the Semantics, a large language ocean.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+)
+}
+}
+
+
+class FeedBack extends Component{
+render(){
+return(
+<section className="ftco-section testimony-section" id='feedback'>
+    <div className="overlay"></div>
+    <div className="container">
+        <div className="row justify-content-center pb-5 mb-3">
+            <div className="col-md-7 heading-section text-center">
+                <h2>Happy Clients &amp; Feedbacks</h2>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col-md-12">
+                <div className="carousel-testimony owl-carousel ftco-owl justify-content-center">
+                    <div className="item">
+                        <div className="testimony-wrap py-4">
+                            <div className="icon d-flex align-items-center justify-content-center"><span
+                                    className="fa fa-quote-left"></span></div>
+                            <div className="text">
+                                <p className="mb-4">Far far away, behind the word mountains, far from the countries
+                                    Vokalia and Consonantia, there live the blind texts.</p>
+                                <div className="d-flex align-items-center">
+                                    <div className="user-img"></div>
+                                    <div className="pl-3">
+                                        <p className="name">Roger Scott</p>
+                                        <span className="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="item">
+                        <div className="testimony-wrap py-4">
+                            <div className="icon d-flex align-items-center justify-content-center"><span
+                                    className="fa fa-quote-left"></span></div>
+                            <div className="text">
+                                <p className="mb-4">Far far away, behind the word mountains, far from the countries
+                                    Vokalia and Consonantia, there live the blind texts.</p>
+                                <div className="d-flex align-items-center">
+                                    <div className="user-img"></div>
+                                    <div className="pl-3">
+                                        <p className="name">Roger Scott</p>
+                                        <span className="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="testimony-wrap py-4">
+                            <div className="icon d-flex align-items-center justify-content-center"><span
+                                    className="fa fa-quote-left"></span></div>
+                            <div className="text">
+                                <p className="mb-4">Far far away, behind the word mountains, far from the countries
+                                    Vokalia and Consonantia, there live the blind texts.</p>
+                                <div className="d-flex align-items-center">
+                                    <div className="user-img"></div>
+                                    <div className="pl-3">
+                                        <p className="name">Roger Scott</p>
+                                        <span className="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+)
+}
+}
+
+class Affordable extends Component{
+render(){
+return(
+<section className="ftco-section bg-light" id='affordable'>
+    <div className="container">
+        <div className="row justify-content-center pb-5 mb-3">
+            <div className="col-md-7 heading-section text-center ftco-animate">
+                <h2>Affordable Packages</h2>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col-md-4 ftco-animate">
+                <div className="block-7">
+                    <div className="img img-one"></div>
+                    <div className="text-center p-4">
+                        <span className="excerpt d-block">Personal</span>
+                        <span className="price"><sup>$</sup> <span className="number">49</span> <sub>/mos</sub></span>
+
+                        <ul className="pricing-text mb-5">
+                            <li><span className="fa fa-check mr-2"></span>5 Dog Walk</li>
+                            <li><span className="fa fa-check mr-2"></span>3 Vet Visit</li>
+                            <li><span className="fa fa-check mr-2"></span>3 Pet Spa</li>
+                            <li><span className="fa fa-check mr-2"></span>Free Supports</li>
+                        </ul>
+
+                        <a href="#" className="btn btn-primary d-block px-2 py-3">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-4 ftco-animate">
+                <div className="block-7">
+                    <div className="img img-two"></div>
+                    <div className="text-center p-4">
+                        <span className="excerpt d-block">Business</span>
+                        <span className="price"><sup>$</sup> <span className="number">79</span> <sub>/mos</sub></span>
+
+                        <ul className="pricing-text mb-5">
+                            <li><span className="fa fa-check mr-2"></span>5 Dog Walk</li>
+                            <li><span className="fa fa-check mr-2"></span>3 Vet Visit</li>
+                            <li><span className="fa fa-check mr-2"></span>3 Pet Spa</li>
+                            <li><span className="fa fa-check mr-2"></span>Free Supports</li>
+                        </ul>
+
+                        <a href="#" className="btn btn-primary d-block px-2 py-3">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-4 ftco-animate">
+                <div className="block-7">
+                    <div className="img img-three"></div>
+                    <div className="text-center p-4">
+                        <span className="excerpt d-block">Ultimate</span>
+                        <span className="price"><sup>$</sup> <span className="number">109</span> <sub>/mos</sub></span>
+
+                        <ul className="pricing-text mb-5">
+                            <li><span className="fa fa-check mr-2"></span>5 Dog Walk</li>
+                            <li><span className="fa fa-check mr-2"></span>3 Vet Visit</li>
+                            <li><span className="fa fa-check mr-2"></span>3 Pet Spa</li>
+                            <li><span className="fa fa-check mr-2"></span>Free Supports</li>
+                        </ul>
+
+                        <a href="#" className="btn btn-primary d-block px-2 py-3">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+)
+}
+}
+
+class Gallery extends Component{
+render(){
+return(
+<section className="ftco-section" id='gallery'>
+    <div className="container">
+        <div className="row justify-content-center pb-5 mb-3">
+            <div className="col-md-7 heading-section text-center ftco-animate">
+                <h2>Pets Gallery</h2>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col-md-4 ftco-animate">
+                <div className="work work-one mb-4 img d-flex align-items-end">
+                    <a href="images/gallery-1.jpg"
+                        className="icon image-popup d-flex justify-content-center align-items-center">
+                        <span className="fa fa-expand"></span>
+                    </a>
+                    <div className="desc w-100 px-4">
+                        <div className="text w-100 mb-3">
+                            <span>Cat</span>
+                            <h2><a href="work-single.html">Persian Cat</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-4 ftco-animate">
+                <div className="work work-two mb-4 img d-flex align-items-end">
+                    <a href="images/gallery-2.jpg"
+                        className="icon image-popup d-flex justify-content-center align-items-center">
+                        <span className="fa fa-expand"></span>
+                    </a>
+                    <div className="desc w-100 px-4">
+                        <div className="text w-100 mb-3">
+                            <span>Dog</span>
+                            <h2><a href="work-single.html">Pomeranian</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-4 ftco-animate">
+                <div className="work work-three mb-4 img d-flex align-items-end">
+                    <a href="images/gallery-3.jpg"
+                        className="icon image-popup d-flex justify-content-center align-items-center">
+                        <span className="fa fa-expand"></span>
+                    </a>
+                    <div className="desc w-100 px-4">
+                        <div className="text w-100 mb-3">
+                            <span>Cat</span>
+                            <h2><a href="work-single.html">Sphynx Cat</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="col-md-4 ftco-animate">
+                <div className="work work-four mb-4 img d-flex align-items-end">
+                    <a href="images/gallery-4.jpg"
+                        className="icon image-popup d-flex justify-content-center align-items-center">
+                        <span className="fa fa-expand"></span>
+                    </a>
+                    <div className="desc w-100 px-4">
+                        <div className="text w-100 mb-3">
+                            <span>Cat</span>
+                            <h2><a href="work-single.html">British Shorthair</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-4 ftco-animate">
+                <div className="work work-five mb-4 img d-flex align-items-end">
+                    <a href="images/gallery-5.jpg"
+                        className="icon image-popup d-flex justify-content-center align-items-center">
+                        <span className="fa fa-expand"></span>
+                    </a>
+                    <div className="desc w-100 px-4">
+                        <div className="text w-100 mb-3">
+                            <span>Dog</span>
+                            <h2><a href="work-single.html">Beagle</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-4 ftco-animate">
+                <div className="work work-sixth mb-4 img d-flex align-items-end">
+                    <a href="images/gallery-6.jpg"
+                        className="icon image-popup d-flex justify-content-center align-items-center">
+                        <span className="fa fa-expand"></span>
+                    </a>
+                    <div className="desc w-100 px-4">
+                        <div className="text w-100 mb-3">
+                            <span>Dog</span>
+                            <h2><a href="work-single.html">Pug</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+)
+}
+}
+
+class News extends Component{
+    render(){
+        return(
+            <section className="ftco-section bg-light" id='news'>
+		<div className="container">
+			<div className="row justify-content-center pb-5 mb-3">
+				<div className="col-md-7 heading-section text-center">
+					<h2>Latest news from our blog</h2>
+				</div>
+			</div>
+			<div className="row d-flex">
+				<div className="col-md-4 d-flex ftco-animate">
+					<div className="blog-entry blog-entry-1 align-self-stretch">
+						<a href="blog-single.html" className="block-20 rounded">
+						</a>
+						<div className="text p-4">
+							<div className="meta mb-2">
+								<div><a href="#">April 07, 2020</a></div>
+								<div><a href="#">Admin</a></div>
+								<div><a href="#" className="meta-chat"><span className="fa fa-comment"></span> 3</a></div>
+							</div>
+							<h3 className="heading"><a href="#">Even the all-powerful Pointing has no control about the
+									blind texts</a></h3>
+						</div>
+					</div>
+				</div>
+				<div className="col-md-4 d-flex ftco-animate">
+					<div className="blog-entry blog-entry-2 align-self-stretch">
+						<a href="blog-single.html" className="block-20 rounded">
+						</a>
+						<div className="text p-4">
+							<div className="meta mb-2">
+								<div><a href="#">April 07, 2020</a></div>
+								<div><a href="#">Admin</a></div>
+								<div><a href="#" className="meta-chat"><span className="fa fa-comment"></span> 3</a></div>
+							</div>
+							<h3 className="heading"><a href="#">Even the all-powerful Pointing has no control about the
+									blind texts</a></h3>
+						</div>
+					</div>
+				</div>
+				<div className="col-md-4 d-flex ftco-animate">
+					<div className="blog-entry blog-entry-3 align-self-stretch">
+						<a href="blog-single.html" className="block-20 rounded">
+						</a>
+						<div className="text p-4">
+							<div className="meta mb-2">
+								<div><a href="#">April 07, 2020</a></div>
+								<div><a href="#">Admin</a></div>
+								<div><a href="#" className="meta-chat"><span className="fa fa-comment"></span> 3</a></div>
+							</div>
+							<h3 className="heading"><a href="#">Even the all-powerful Pointing has no control about the
+									blind texts</a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+        )
+    }
+}
+
+
+class Appointment extends Component{
+    render(){
+        return(
+            <section className="ftco-appointment ftco-section ftco-no-pt ftco-no-pb img" id='form'>
+		<div className="overlay"></div>
+		<div className="container">
+			<div className="row d-md-flex justify-content-end">
+				<div className="col-md-12 col-lg-6 half p-3 py-5 pl-lg-5 ftco-animate">
+					<h2 className="mb-4">Free Consultation</h2>
+					<form action="#" className="appointment">
+						<div className="row">
+							<div className="col-md-12">
+								<div className="form-group">
+									<div className="form-field">
+										<div className="select-wrap">
+											<div className="icon"><span className="fa fa-chevron-down"></span></div>
+											<select name="" id="" className="form-control">
+												<option value="">Select services</option>
+												<option value="">Cat Sitting</option>
+												<option value="">Dog Walk</option>
+												<option value="">Pet Spa</option>
+												<option value="">Pet Grooming</option>
+												<option value="">Pet Daycare</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className="col-md-6">
+								<div className="form-group">
+									<input type="text" className="form-control" placeholder="Your Name"/>
+								</div>
+							</div>
+							<div className="col-md-6">
+								<div className="form-group">
+									<input type="text" className="form-control" placeholder="Vehicle number"/>
+								</div>
+							</div>
+							<div className="col-md-6">
+								<div className="form-group">
+									<div className="input-wrap">
+										<div className="icon"><span className="fa fa-calendar"></span></div>
+										<input type="text" className="form-control appointment_date" placeholder="Date"/>
+									</div>
+								</div>
+							</div>
+							<div className="col-md-6">
+								<div className="form-group">
+									<div className="input-wrap">
+										<div className="icon"><span className="fa fa-clock-o"></span></div>
+										<input type="text" className="form-control appointment_time" placeholder="Time"/>
+									</div>
+								</div>
+							</div>
+							<div className="col-md-12">
+								<div className="form-group">
+									<textarea name="" id="" cols="30" rows="7" className="form-control"
+										placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div className="col-md-12">
+								<div className="form-group">
+									<input type="submit" value="Send message" className="btn btn-primary py-3 px-4"/>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+        )
+    }
+}
+
+
+export default class Body extends Component{
+render(){
+return(
+    <>
+    <FirstSec />
+    <SecondSec />
+    <ThirdSec />
+    <Faq />
+    <FeedBack />
+    <Affordable />
+    <Gallery />
+    <News/>
+    <Appointment/>
+    </>
+)
+}
+}

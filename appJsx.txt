@@ -1,0 +1,79 @@
+import { Component } from "react";
+import './css/animate.css'
+import './css/magnific-popup.css'
+import './css/bootstrap-datepicker.css'
+import './css/jquery.timepicker.css'
+import './css/flaticon.css'
+import './css/style.css'
+import Header from './pages/header'
+import Body from './pages/body'
+import Footer from './pages/footer'
+
+export default class App extends Component{
+constructor(props){
+    super(props)
+    this.state={
+        scroll:0
+    }
+}
+
+ScrollThreeBox = (event)=>{
+    let boxItem = document.querySelectorAll('.littleTopAnime')
+    this.setState({
+        scroll: parseInt(event.target.scrollTop)
+    })
+
+    if(this.state.scroll > ((document.getElementById('threeBox').offsetTop) - 600)){
+        boxItem.forEach((item) =>
+            item.style.cssText='transform:translateY(0);opacity:1;'
+        )
+    }
+
+    let _feedItem = document.querySelectorAll('#feedback .item')
+    if(this.state.scroll > ((document.getElementById('feedback').offsetTop)-500)){
+        document.querySelectorAll('#feedback h2')[0].style.cssText='transform:translateY(0);opacity:1'
+        _feedItem.forEach((item)=>{
+            item.style.cssText='transform:translateY(0);opacity:1'
+        })
+    }
+    let Affordable = document.querySelectorAll('#affordable .col-md-4')
+    if(this.state.scroll > ((document.getElementById('affordable').offsetTop)-600)){
+        document.querySelectorAll('#affordable h2')[0].style.cssText='transform:translateY(0);opacity:1'
+        Affordable.forEach((item)=>{
+            item.style.cssText='transform:translateY(0);opacity:1'
+        })
+    }
+
+    let galleryItem = document.querySelectorAll('#gallery .col-md-4')
+    if(this.state.scroll > ((document.getElementById('gallery').offsetTop)-500)){
+        document.querySelectorAll('#gallery h2')[0].style.cssText='transform:translateY(0);opacity:1'
+        galleryItem.forEach((item)=>{
+            item.style.cssText='transform:translateY(0);opacity:1'
+        })
+    }
+
+    let news = document.querySelectorAll('#news .col-md-4')
+    if(this.state.scroll > ((document.getElementById('news').offsetTop)-500)){
+        document.querySelectorAll('#news h2')[0].style.cssText='transform:translateY(0);opacity:1'
+        news.forEach((item)=>{
+            item.style.cssText='transform:translateY(0);opacity:1'
+        })
+    }
+
+
+    let form = document.querySelectorAll('#form form')
+    if(this.state.scroll > ((document.getElementById('form').offsetTop)-500)){
+        document.querySelectorAll('#form h2')[0].style.cssText='transform:translateY(0);opacity:1'
+        form[0].style.cssText='transform:translateY(0);opacity:1'
+    }
+}
+render(){
+return(
+    <main onScroll={this.ScrollThreeBox}>
+        <Header/>
+        <Body/>
+        <Footer/>
+    </main>
+)
+}
+}

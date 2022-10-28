@@ -1,0 +1,82 @@
+import { Component } from "react";
+
+
+class TopNav extends Component{
+
+   
+render(){
+return(
+<div className="wrap">
+    <div className="container">
+        <div className="row">
+            <div className="col-md-6 d-flex align-items-center">
+                <p className="mb-0 phone pl-md-2">
+                    <a href="tel:+989919201707" className="mr-2"><span className="fa fa-phone mr-1"></span> +98 9919201707</a>
+                    <a href="mailto:imohmdsmp@gmail.com"><span className="fa fa-paper-plane mr-1"></span>imohmdsmp@gmail.com</a>
+                </p>
+            </div>
+            <div className="col-md-6 d-flex justify-content-md-end">
+                <div className="social-media">
+                    <p className="mb-0 d-flex">
+                        <a target={'_blank'} href="https://www.linkedin.com/in/mohammad-esmaeilpour-4ab401217/" className="d-flex align-items-center justify-content-center"><span
+                                className="fa fa-linkedin"><i className="sr-only">linkedin</i></span></a>
+                        <a target={'_blank'} href="https://t.me/MohammadEsmp" className="d-flex align-items-center justify-content-center"><span
+                                className="fa fa-telegram"><i className="sr-only">telegram</i></span></a>
+                        <a target={'_blank'} href="https://www.instagram.com/mohammad_esmaeilpour_web/" className="d-flex align-items-center justify-content-center"><span
+                                className="fa fa-instagram"><i className="sr-only">Instagram</i></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+)
+}
+}
+
+class Nav extends Component{
+    Collapse = ()=>{
+        if(document.getElementsByClassName('navbar-collapse')[0].clientHeight == 0){
+            document.getElementsByClassName('navbar-collapse')[0].style.cssText = 'max-height:'+(document.getElementsByClassName('navbar-collapse')[0].scrollHeight)+'px'
+        }else{
+            document.getElementsByClassName('navbar-collapse')[0].style.cssText = 'max-height:0'
+        }
+    } 
+render(){
+return(
+    <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div className="container">
+			<a className="navbar-brand" href="index.html"><span className="flaticon-pawprint-1 mr-2"></span>Pet sitting</a>
+			<button onClick={this.Collapse} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span className="fa fa-bars"></span> Menu
+			</button>
+			<div className="navbar-collapse" id="ftco-nav">
+				<ul className="navbar-nav ml-auto">
+					<li className="nav-item active"><a href="index.html" className="nav-link">Home</a></li>
+					<li className="nav-item"><a href="about.html" className="nav-link">About</a></li>
+					<li className="nav-item"><a href="vet.html" className="nav-link">Veterinarian</a></li>
+					<li className="nav-item"><a href="services.html" className="nav-link">Services</a></li>
+					<li className="nav-item"><a href="gallery.html" className="nav-link">Gallery</a></li>
+					<li className="nav-item"><a href="pricing.html" className="nav-link">Pricing</a></li>
+					<li className="nav-item"><a href="blog.html" className="nav-link">Blog</a></li>
+					<li className="nav-item"><a href="contact.html" className="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+)
+}
+}
+
+
+export default class Header extends Component{
+render(){
+return(
+<>
+    <TopNav />
+    <Nav />
+</>
+)
+}
+}
